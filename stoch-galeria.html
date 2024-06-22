@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Galeria - Kamil Stoch</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="icon" href="IMG/skoczek-logo.png">
+</head>
+<body>
+    <a href="index.html">
+        <header>
+            <div><img class="logo" src="IMG/skoczek-logo.png" alt="skoczek-logo"></div>
+            <div id="header">Polscy Skoczkowie</div>
+            <div><img class="logo" src="IMG/skoczek-logo.png" alt="skoczek-logo"></div>
+        </header>
+        </a>
+
+        <div id="big-photo-box">
+            
+        </div>
+
+        <div id="gallery-box">
+            <div class="photo-box">
+                <img class="photo" src="IMG/stoch/photo1.jpg" alt="stoch">
+            </div>
+
+            <div class="photo-box">
+                <img class="photo" src="IMG/stoch/photo2.jpg" alt="stoch">
+            </div>
+
+            <div class="photo-box">
+                <img class="photo" src="IMG/stoch/photo3.jpg" alt="stoch">
+            </div>
+
+            <div class="photo-box">
+                <img class="photo" src="IMG/stoch/photo4.jpg" alt="stoch">
+            </div>
+
+            <div class="photo-box">
+                <img class="photo" src="IMG/stoch/photo5.jpg" alt="stoch">
+            </div>
+
+            <div class="photo-box">
+                <img class="photo" src="IMG/stoch/photo6.jpg" alt="stoch">
+            </div>
+
+            <div class="photo-box">
+                <img class="photo" src="IMG/stoch/photo7.jpg" alt="stoch">
+            </div>
+
+            <div class="photo-box">
+                <img class="photo" src="IMG/stoch/photo8.jpg" alt="stoch">
+            </div>
+
+            <div class="photo-box">
+                <img class="photo" src="IMG/stoch/photo9.jpg" alt="stoch">
+            </div>
+
+            <div class="photo-box">
+                <img class="photo" src="IMG/stoch/photo10.jpg" alt="stoch">
+            </div>
+
+            <div class="photo-box">
+                <img class="photo" src="IMG/stoch/photo11.jpg" alt="stoch">
+            </div>
+            
+            <div class="photo-box">
+                <img class="photo" src="IMG/stoch/photo12.jpg" alt="stoch">
+            </div>
+
+            <div class="photo-box">
+                <img class="photo" src="IMG/stoch/photo13.jpg" alt="stoch">
+            </div>
+
+            <div class="photo-box">
+                <img class="photo" src="IMG/stoch/photo14.jpg" alt="stoch">
+            </div>
+
+            <div class="photo-box">
+                <img class="photo" src="IMG/stoch/photo15.jpg" alt="stoch">
+            </div>
+
+            <div class="photo-box">
+                <img class="photo" src="IMG/stoch/photo16.jpg" alt="stoch">
+            </div>
+
+            <div class="photo-box">
+                <img class="photo" src="IMG/stoch/photo17.jpg" alt="stoch">
+            </div>
+
+            <div class="photo-box">
+                <img class="photo" src="IMG/stoch/photo18.jpg" alt="stoch">
+            </div>
+
+            <div class="photo-box">
+                <img class="photo" src="IMG/stoch/photo19.jpg" alt="stoch">
+            </div>
+
+            <div class="photo-box">
+                <img class="photo" src="IMG/stoch/photo20.jpg" alt="stoch">
+            </div>
+
+            <div class="photo-box">
+                <img class="photo" src="IMG/stoch/photo21.jpg" alt="stoch">
+            </div>
+
+            <div class="photo-box">
+                <img class="photo" src="IMG/stoch/photo22.jpg" alt="stoch">
+            </div>
+
+            <div class="photo-box">
+                <img class="photo" src="IMG/stoch/photo23.jpg" alt="stoch">
+            </div>
+
+            <div class="photo-box">
+                <img class="photo" src="IMG/stoch/photo24.jpg" alt="stoch">
+            </div>
+            
+            <div class="photo-box">
+                <img class="photo" src="IMG/stoch/photo25.jpg" alt="stoch">
+            </div>
+
+            <div class="photo-box">
+                <img class="photo" src="IMG/stoch/photo26.jpg" alt="stoch">
+            </div>
+
+            <div class="photo-box">
+                <img class="photo" src="IMG/stoch/photo27.jpg" alt="stoch">
+            </div>
+
+            <div class="photo-box">
+                <img class="photo" src="IMG/stoch/photo28.jpg" alt="stoch">
+            </div>
+
+            <div class="photo-box">
+                <img class="photo" src="IMG/stoch/photo29.jpg" alt="stoch">
+            </div>
+
+            <div class="photo-box">
+                <img class="photo" src="IMG/stoch/photo30.jpg" alt="stoch">
+            </div>
+
+            <div class="photo-box">
+                <img class="photo" src="IMG/stoch/photo31.jpg" alt="stoch">
+            </div>
+
+            <div class="photo-box">
+                <img class="photo" src="IMG/stoch/photo32.jpg" alt="stoch">
+            </div>
+        </div>
+
+        <footer>
+            <div>
+            Created by: <br>
+            Albert Pacocha <br>
+            albertpacocha@o2.pl <br>
+            664 705 252
+            </div>
+        </footer>
+
+
+        <script>
+            let dlugosc = document.querySelectorAll('.photo').length;
+            let photos = document.getElementsByClassName("photo");
+
+            for(let i=0; i<dlugosc; i++) {
+                photos[i].addEventListener("click", e => {
+                let div = document.getElementById("big-photo-box");
+                console.log(photos[i].getAttribute("src"));
+                div.innerHTML = "<img id='big-photo' src='" + photos[i].getAttribute("src") + "' alt='malysz'><img id='x' src='IMG/x.png' alt='x'> <div id='left-box'><img id='left' src='IMG/left.png' alt='left'></div><div id='right-box'><img id='right' src='IMG/right.png' alt='right'></div>";
+                var currentI = i;
+                div.setAttribute("id", "big-photo-box-2");
+
+                
+
+                document.addEventListener('keydown', (e3) => {
+                            if (e3.keyCode === 37 && currentI>0) {
+                                currentI--;
+                                div.innerHTML = "<img id='big-photo' src='" + photos[currentI].getAttribute("src") + "' alt='malysz'><img id='x' src='IMG/x.png' alt='x'> <div id='left-box'><img id='left' src='IMG/left.png' alt='left'></div><div id='right-box'><img id='right' src='IMG/right.png' alt='right'></div>";
+                                
+                                x.addEventListener("click", e2 => {
+                        div.setAttribute("id", "big-photo-box");
+                        div.innerHTML="";
+                        currentI=NaN;
+                    
+                });
+                            } 
+                            if (e3.keyCode === 39 && currentI<dlugosc-1) {
+                                currentI++;
+                                div.innerHTML = "<img id='big-photo' src='" + photos[currentI].getAttribute("src") + "' alt='malysz'><img id='x' src='IMG/x.png' alt='x'> <div id='left-box'><img id='left' src='IMG/left.png' alt='left'></div><div id='right-box'><img id='right' src='IMG/right.png' alt='right'></div>";
+                        
+                                x.addEventListener("click", e2 => {
+                                div.setAttribute("id", "big-photo-box");
+                                div.innerHTML="";
+                                currentI=NaN;
+                    
+                });
+                            }
+
+                        console.log(currentI);
+
+                    });
+
+                    document.getElementById("big-photo-box-2").addEventListener('click', (e4) => {
+                            if ((document.getElementById('left-box') === e4.target || document.getElementById('left') === e4.target) && currentI>0) {
+                                currentI--;
+                                div.innerHTML = "<img id='big-photo' src='" + photos[currentI].getAttribute("src") + "' alt='malysz'><img id='x' src='IMG/x.png' alt='x'> <div id='left-box'><img id='left' src='IMG/left.png' alt='left'></div><div id='right-box'><img id='right' src='IMG/right.png' alt='right'></div>";
+                                var x = document.getElementById('x');
+
+                                x.addEventListener("click", e2 => {
+                                div.setAttribute("id", "big-photo-box");
+                                div.innerHTML="";
+                                currentI=NaN;
+                    
+                });
+                        } 
+                            if ((document.getElementById('right-box') === e4.target || document.getElementById('right') === e4.target) && currentI<dlugosc-1) {
+                                currentI++;
+                                div.innerHTML = "<img id='big-photo' src='" + photos[currentI].getAttribute("src") + "' alt='malysz'><img id='x' src='IMG/x.png' alt='x'> <div id='left-box'><img id='left' src='IMG/left.png' alt='left'></div><div id='right-box'><img id='right' src='IMG/right.png' alt='right'></div>";
+                                var x = document.getElementById('x');
+
+                                x.addEventListener("click", e2 => {
+                                div.setAttribute("id", "big-photo-box");
+                                div.innerHTML="";
+                                currentI=NaN;
+                    
+                });
+                            }
+
+                        console.log(currentI);
+
+                    });
+ 
+
+                x.addEventListener("click", e2 => {
+                        div.setAttribute("id", "big-photo-box");
+                        div.innerHTML="";
+                        currentI=NaN;
+                    
+                });
+
+                window.addEventListener("keydown", e5 => {
+                    if(e5.keyCode === 27) {
+                        div.setAttribute("id", "big-photo-box");
+                        div.innerHTML="";
+                        currentI=NaN;
+                    }
+
+                    
+                });
+            });
+            }
+
+            
+        </script>
+
+    </body>
+    </html>

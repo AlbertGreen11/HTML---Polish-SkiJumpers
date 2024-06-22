@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Polscy skoczkowie</title>
+    <link rel="stylesheet" href="style4.css">
+    <link rel="icon" href="IMG/skoczek-logo.png">
+</head>
+<body>
+    <a href="index.html">
+        <header>
+            <div><img class="logo" src="IMG/skoczek-logo.png" alt="skoczek-logo"></div>
+            <div id="header">Polscy Skoczkowie</div>
+            <div><img class="logo" src="IMG/skoczek-logo.png" alt="skoczek-logo"></div>
+        </header>
+    </a>
+
+    <div id="first">
+        <form id="form">
+            <h1>Nowa gra</h1>
+            <div class="input">Imię: <input id="firstName" type="text"></div>
+            <div class="input">Nazwisko: <input id="lastName" type="text"></div>
+            <div id="country-box" class="input">Kraj(ENG):&nbsp;<input id="country" type="text"><div id="flag"></div></div>
+            <div class="input">Kolor skoczka: <input id="color" type="color"></div>
+            <button type="button" id="add">Dodaj skoczka</button>
+            <button type="button" id="play">Graj</button>
+            <div id="error"></div>
+        </form>
+        
+        <div id="table-box">
+        <table id="table">
+            <thead>
+            <tr><th>Miejsce</th><th>Imię</th><th>Nazwisko</th><th>Kraj</th><th>Punkty</th></tr>
+            </thead>
+            <tr><td>1</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>2</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>3</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>4</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>5</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>6</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>7</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>8</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>9</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>10</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>11</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>12</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>13</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>14</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>15</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>16</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>17</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>18</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>19</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>20</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>21</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>22</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>23</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>24</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>25</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>26</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>27</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>28</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>29</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>30</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>31</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>32</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>33</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>34</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>35</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>36</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>37</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>38</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>39</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>40</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>41</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>42</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>43</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>44</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>45</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>46</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>47</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>48</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>49</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>50</td><td></td><td></td><td></td><td></td></tr>
+        </table>
+    </div>  
+    </div>
+
+    <div id="second">
+        <div id="instruction">
+            Aby rozpocząć grę kliknij "ENTER"<br>
+            Aby zawodnik wystartował wciśnij "SPACE"<br>
+            Aby się wybić naciśnij "SPACE"<br>
+            Aby przedłużyć swój skok wciskaj szybko "SPACE"<br>
+            Aby wczytać kolejnego zawodnika naciśnij "ENTER"
+        </div>  
+
+        <div id="jumper">
+        
+        </div>
+    </div>
+
+    <div id="third">
+        <table id="player">
+            <tr><th colspan="6">Zawodnik</th></tr>
+            <tr><td colspan="1"></td><td colspan="5"></td></tr>
+            <tr><td colspan="1">Odległość: </td><td colspan="5"></td></tr>
+            <tr><td colspan="1">Noty: </td><td colspan="1"></td><td colspan="1"></td><td colspan="1"></td><td colspan="1"></td><td colspan="1"></td></tr>
+            <tr><td colspan="1">Punkty: </td><td colspan="5">158.0</td></tr>
+        </table>
+    </div>
+
+    <footer>
+        <div>
+        Created by: <br>
+        Albert Pacocha <br>
+        albertpacocha@o2.pl <br>
+        664 705 252
+        </div>
+    </footer>
+
+    <script>
+        let table = document.getElementById("table");
+                    for (let j = 1; j<=50; j++) {
+                        table.rows[j].style.fontWeight = "bold";
+                        if(table.rows[j].cells[0].textContent == 1) {
+                            table.rows[j].style.backgroundColor = "rgb(241, 238, 4)";
+                        }
+                        
+                        else if(table.rows[j].cells[0].textContent == 2) {
+                            table.rows[j].style.backgroundColor = "rgb(226, 226, 221)";
+                        }
+                        
+                        else if(table.rows[j].cells[0].textContent == 3) {
+                            table.rows[j].style.backgroundColor = "rgb(221, 137, 27)";
+                        }
+
+                        else if(table.rows[j].cells[0].textContent > 30) {
+                            table.rows[j].style.backgroundColor = "rgb(253, 255, 105)";
+                        }
+
+                        else if(table.rows[j].cells[0].textContent > 10) {
+                            table.rows[j].style.backgroundColor = "rgb(141, 243, 141)";
+                        } 
+                        else {
+                            table.rows[j].style.backgroundColor = "rgb(63, 231, 63)";
+                        }
+                    } 
+
+
+        let skijumpers = [];
+        let skijumpers2 = [];
+        let add = document.getElementById("add");
+        let flag = document.getElementById("flag");
+        let first = document.getElementById("first");
+        let id = 1;
+
+        document.getElementById("form").addEventListener("click", function() {
+        flag.innerHTML = "<img src='IMG/flags/" + document.getElementById("country").value + ".png' onerror=\"this.onerror=null;this.src='IMG/flags/olympic.png';\">";
+        })
+
+        
+        add.addEventListener("click", function() {
+            if(skijumpers.length<50) {
+                if(document.getElementById("firstName").value!="" && document.getElementById("lastName").value!="") {
+
+            let skijumper = {
+                id: id,
+                firstName: document.getElementById("firstName").value,
+                lastName: document.getElementById("lastName").value,
+                country: document.getElementById("country").value,
+                color: document.getElementById("color").value,
+                points: null
+            }
+            skijumpers.push(skijumper);
+            document.getElementById("error").innerHTML = "Dodano zawodnika nr. " + skijumpers.length;
+            document.getElementById("firstName").value = "";
+            document.getElementById("lastName").value = "";
+            document.getElementById("country").value = "";
+            document.getElementById("color").value = "#000000";
+
+            id++;
+            console.log(skijumpers);
+        }
+        else {
+            document.getElementById("error").innerHTML = "Podaj prawidlowe dane";
+        }
+        }
+        else {
+            document.getElementById("error").innerHTML = "Max 50 skoczków!";
+        }
+        
+        })
+
+        play.addEventListener("click", function() {
+            document.getElementById("second").addEventListener("click", function(event) {
+            let vw = window.innerWidth;
+            let vh = window.innerHeight,
+                eCXinVW = event.clientX / vw * 100 - 30, // Multiplying by 100 to get percentage 
+                eCYinVH = event.clientY / vh * 100 - 12; // Multiplying by 100 to get percentage 
+
+                console.log(eCXinVW, eCYinVH);
+});
+
+                for(let i=0; i<skijumpers.length; i++) {
+                    table.rows[i+1].cells[1].innerHTML = skijumpers[i].firstName;
+                    table.rows[i+1].cells[2].innerHTML = skijumpers[i].lastName;
+                    table.rows[i+1].cells[3].innerHTML = "<img src='IMG/flags/" + skijumpers[i].country + ".png' onerror=\"this.onerror=null;this.src='IMG/flags/olympic.png';\">";
+                    table.rows[i+1].cells[4].innerHTML = skijumpers[i].points;
+                }
+
+
+
+
+            document.getElementById("table").style.zIndex = 0;
+            document.getElementById("table-box").style.zIndex = 0;
+            document.getElementById("form").style.zIndex = -1;
+            document.getElementById("player").style.zIndex = 0;
+            document.getElementById("table-box").style.overflow = "auto";
+            document.getElementById("form").innerHTML = "";
+
+            let player = document.getElementById("player");
+            let jumper = document.getElementById("jumper");
+            let position = 0;
+
+
+            let counter = 0;
+            let enter = true;
+
+            let seria = 1;
+
+            //seria 1.
+            
+            document.addEventListener("keydown", e2 => {
+                if(e2.code === "Enter" && enter && seria==1) {
+                    jumper.style.background = skijumpers[position].color;
+                    player.rows[1].cells[0].innerHTML = position+1;
+                    player.rows[1].cells[1].innerHTML = skijumpers[position].firstName + " " + skijumpers[position].lastName;
+
+                    jumper.style.webkitMaskBoxImage = "url(IMG/player-sitting.png)";
+                    jumper.style.width = "2.5vw";
+                    jumper.style.height = "3.5vh";
+                    jumper.style.top = "3.2vh";
+                    jumper.style.left = "1.7vw";
+                    jumper.style.rotate = "0deg";
+                    enter = false;
+
+                    player.rows[2].cells[1].innerHTML = "";
+                    player.rows[4].cells[1].innerHTML = "";
+                    for(let i=01; i<=5; i++) {
+                        player.rows[3].cells[i].innerHTML = "";
+                        player.rows[3].cells[i].style.textDecoration = "none";
+                    }
+
+                    
+                    document.addEventListener("keydown", e => {
+                if(e.code === "Space" && counter==0 && !enter && seria==1) {
+                    counter++;
+                    jumper.style.webkitMaskBoxImage = "url(IMG/player-sliding.png)";
+                    jumper.style.width = "2vw";
+                    jumper.style.height = "3vh";
+                    jumper.style.top = "5.1vh";
+                    jumper.style.left = "2.4vw";
+                    jumper.style.rotate = "58deg";
+
+                    let id = null; 
+                    let angle = 58; 
+                    let x = 2.4;
+                    let y = 5.1;
+                    
+                    id = setInterval(frame, 20);
+                        function frame() {
+                            if (y > 23.5) {
+                                clearInterval(id);
+                                id = setInterval(frame, 20);
+                                    function frame() {
+                                                if(y<25.2) {
+                                                y+=0.2;
+                                                }
+                                                if(x<=11) { 
+                                                angle-=3.4;
+                                                }
+                                                else if(x<12){
+                                                    angle-=0.8;
+                                                    y+=0.05;
+                                                }
+                                                else{
+                                                    document.addEventListener("keydown", e => {
+                                                        if(e.code === "Space" && counter==1 && x<=13) {
+                                                            jumper.style.webkitMaskBoxImage = "url(IMG/player.png)";
+                                                            jumper.style.width = "1.5vw";
+                                                            jumper.style.height = "2.5vh";
+                                                            counter++;
+                                                            y-= 4.5;
+                                                            jumper.style.top = y + "vh";
+                                                            
+                                                        }
+
+                                                        else if(e.code === "Space" && counter==1 && x<14.5) {
+                                                            jumper.style.webkitMaskBoxImage = "url(IMG/player.png)";
+                                                            jumper.style.width = "1.5vw";
+                                                            jumper.style.height = "2.5vh";
+                                                            counter++;
+                                                            y-= 5;
+                                                            jumper.style.top = y + "vh";
+                                                            
+                                                }
+                                            })
+
+                                            if (x>=14.5 || counter==2) {
+                                                jumper.style.webkitMaskBoxImage = "url(IMG/player.png)";
+                                                jumper.style.width = "1.5vw";
+                                                jumper.style.height = "2.5vh";
+                                                counter++;
+
+                                                
+                                                clearInterval(id);
+                                                id = setInterval(frame, 20);
+                                                    function frame() {
+                                                        document.addEventListener("keydown", e => {
+                                                        if(e.code === "Space" && !e.repeat && counter>=2) {
+                                                            y-=0.0021;
+                                                        }})
+
+                                                        if((y >= 1.45006*x + 13.1156 - 1) || y>=65.5) {
+                                                            if(y >= 1.45006*x + 13.1156 - 1) {
+                                                                jumper.style.rotate = "30deg";
+                                                            }
+                                                            if(y>=65.5) {
+                                                                jumper.style.rotate = "0deg";
+                                                            }
+                                                            jumper.style.webkitMaskBoxImage = "url(IMG/player-landing.png)";
+                                                            jumper.style.height = "3.5vh";
+                                                            jumper.style.width = "2.5vw";
+                                                            clearInterval(id);
+
+                                                            let distance = 4 + Number((Math.round(3.5* x * 2) / 2).toFixed(1));
+                                                            player.rows[2].cells[1].innerHTML = distance + " m";
+
+                                                            let min;
+                                                            let max;
+
+                                                            if(distance<100) {
+                                                                min = 13.5;
+                                                                max = 15.0;
+                                                            }
+                                                            else if(distance<115) {
+                                                                min = 15.0;
+                                                                max = 16.5;
+                                                            }
+                                                            else if(distance<125) {
+                                                                min = 16.5;
+                                                                max = 17.5;
+                                                            }
+                                                            else if(distance<135) {
+                                                                min = 18.0;
+                                                                max = 19.0;
+                                                            }
+                                                            else if(distance<140) {
+                                                                min = 18.5;
+                                                                max = 19.5;
+                                                            }
+                                                            else {
+                                                                min = 19.0;
+                                                                max = 20.0;
+                                                            }
+
+                                                            let judges = [];
+                                                            let points = 60 + 1.8*(distance-125);
+
+
+                                                            for(let i=1; i<=5; i++) {
+                                                                judges[i-1] = (min+(Math.round(Math.random() * (max-min) * 2) / 2));
+                                                                player.rows[3].cells[i].innerHTML = judges[i-1].toFixed(1);
+                                                                points+=judges[i-1];
+                                                            }
+
+                                                            let maxJudge = Math.max(...judges);
+                                                            let minJudge = Math.min(...judges);
+
+                                                            for(let i=1; i<=5; i++) {
+                                                                if(judges[i-1] == minJudge) {
+                                                                    player.rows[3].cells[i].style.textDecoration = "line-through";
+                                                                    break;
+                                                                }
+                                                            }
+
+                                                            for(let i=1; i<=5; i++) {
+                                                                if(judges[i-1] == maxJudge) {
+                                                                    player.rows[3].cells[i].style.textDecoration = "line-through";
+                                                                    break;
+                                                                }
+                                                            }
+
+                                                            points-=minJudge+maxJudge;
+                                                            skijumpers[position].points = points.toFixed(1);
+                                                            player.rows[4].cells[1].innerHTML =  points.toFixed(1);
+                                                            
+                                                            for(let i=0; i<skijumpers.length; i++) {
+                                                                if(Number(skijumpers[position].points)>=Number(skijumpers[i].points) || skijumpers[i].points==null) {
+                                                                    skijumpers.splice(i, 0, skijumpers[position]);
+                                                                    skijumpers.splice(position+1, 1);
+                                                                    break;
+                                                                }
+                                                            }
+
+                                                            for(let i=0; i<skijumpers.length; i++) {
+                                                                table.rows[i+1].cells[1].innerHTML = skijumpers[i].firstName;
+                                                                table.rows[i+1].cells[2].innerHTML = skijumpers[i].lastName;
+                                                                table.rows[i+1].cells[3].innerHTML = "<img src='IMG/flags/" + skijumpers[i].country + ".png' onerror=\"this.onerror=null;this.src='IMG/flags/olympic.png';\">";
+                                                                table.rows[i+1].cells[4].innerHTML = skijumpers[i].points;
+                                                            }
+                                                            
+                                                            console.log(skijumpers);
+
+                                                            
+
+                                                            counter = 0;
+                                                            enter = true;
+                                                            position++;
+
+                                                            if(position==skijumpers.length) {
+                                                                if(skijumpers.length>30) {
+                                                                    position = 29;
+                                                                }
+                                                                else {
+                                                                    position = skijumpers.length-1;
+                                                                }
+                                                                skijumpers2 = skijumpers.slice();
+                                                                seria++;
+                                                            }
+                                                        }
+
+                                                        x+=0.1;
+                                                        y+=0.22; 
+                                                        jumper.style.left = x + "vw";
+                                                        jumper.style.top = y + "vh";
+                                                    }
+                                                }
+
+                                                }
+                                                
+            
+                                                x+=0.1535;
+                                                jumper.style.left = x + "vw";
+                                                jumper.style.top = y + "vh";
+                                                jumper.style.rotate = angle + "deg"; 
+                                            } 
+                                        }
+                            else {
+                                x+=0.1;
+                                y+=0.285; 
+                                jumper.style.left = x + "vw";
+                                jumper.style.top = y + "vh";
+                                 
+    }
+  }
+
+
+                }
+            })        
+                }
+            })
+
+            //seria 2.
+
+            document.addEventListener("keydown", e2 => {
+                if(e2.code === "Enter" && enter && seria==2) {
+                    jumper.style.background = skijumpers2[position].color;
+                    player.rows[1].cells[0].innerHTML = position+1;
+                    player.rows[1].cells[1].innerHTML = skijumpers2[position].firstName + " " + skijumpers2[position].lastName;
+
+                    jumper.style.webkitMaskBoxImage = "url(IMG/player-sitting.png)";
+                    jumper.style.width = "2.5vw";
+                    jumper.style.height = "3.5vh";
+                    jumper.style.top = "3.2vh";
+                    jumper.style.left = "1.7vw";
+                    jumper.style.rotate = "0deg";
+                    enter = false;
+
+                    player.rows[2].cells[1].innerHTML = "";
+                    player.rows[4].cells[1].innerHTML = "";
+                    for(let i=01; i<=5; i++) {
+                        player.rows[3].cells[i].innerHTML = "";
+                        player.rows[3].cells[i].style.textDecoration = "none";
+                    }
+
+                    
+                    document.addEventListener("keydown", e => {
+                if(e.code === "Space" && counter==0 && !enter && seria==2) {
+                    counter++;
+                    jumper.style.webkitMaskBoxImage = "url(IMG/player-sliding.png)";
+                    jumper.style.width = "2vw";
+                    jumper.style.height = "3vh";
+                    jumper.style.top = "5.1vh";
+                    jumper.style.left = "2.4vw";
+                    jumper.style.rotate = "58deg";
+
+                    let id = null; 
+                    let angle = 58; 
+                    let x = 2.4;
+                    let y = 5.1;
+                    
+                    id = setInterval(frame, 20);
+                        function frame() {
+                            if (y > 23.5) {
+                                clearInterval(id);
+                                id = setInterval(frame, 20);
+                                    function frame() {
+                                                if(y<25.2) {
+                                                y+=0.2;
+                                                }
+                                                if(x<=11) { 
+                                                angle-=3.4;
+                                                }
+                                                else if(x<12){
+                                                    angle-=0.8;
+                                                    y+=0.05;
+                                                }
+                                                else{
+                                                    document.addEventListener("keydown", e => {
+                                                        if(e.code === "Space" && counter==1 && x<=13) {
+                                                            jumper.style.webkitMaskBoxImage = "url(IMG/player.png)";
+                                                            jumper.style.width = "1.5vw";
+                                                            jumper.style.height = "2.5vh";
+                                                            counter++;
+                                                            y-= 4.5;
+                                                            jumper.style.top = y + "vh";
+                                                            
+                                                        }
+
+                                                        else if(e.code === "Space" && counter==1 && x<14.5) {
+                                                            jumper.style.webkitMaskBoxImage = "url(IMG/player.png)";
+                                                            jumper.style.width = "1.5vw";
+                                                            jumper.style.height = "2.5vh";
+                                                            counter++;
+                                                            y-= 5;
+                                                            jumper.style.top = y + "vh";
+                                                            
+                                                }
+                                            })
+
+                                            if (x>=14.5 || counter==2) {
+                                                jumper.style.webkitMaskBoxImage = "url(IMG/player.png)";
+                                                jumper.style.width = "1.5vw";
+                                                jumper.style.height = "2.5vh";
+                                                counter++;
+
+                                                
+                                                clearInterval(id);
+                                                id = setInterval(frame, 20);
+                                                    function frame() {
+                                                        document.addEventListener("keydown", e => {
+                                                        if(e.code === "Space" && !e.repeat && counter>=2) {
+                                                            y-=0.0021;
+                                                        }})
+
+                                                        if((y >= 1.45006*x + 13.1156 - 1) || y>=65.5) {
+                                                            if(y >= 1.45006*x + 13.1156 - 1) {
+                                                                jumper.style.rotate = "30deg";
+                                                            }
+                                                            if(y>=65.5) {
+                                                                jumper.style.rotate = "0deg";
+                                                            }
+                                                            jumper.style.webkitMaskBoxImage = "url(IMG/player-landing.png)";
+                                                            jumper.style.height = "3.5vh";
+                                                            jumper.style.width = "2.5vw";
+                                                            clearInterval(id);
+
+                                                            let distance = 4 + Number((Math.round(3.5* x * 2) / 2).toFixed(1));
+                                                            player.rows[2].cells[1].innerHTML = distance + " m";
+
+                                                            let min;
+                                                            let max;
+
+                                                            if(distance<100) {
+                                                                min = 13.5;
+                                                                max = 15.0;
+                                                            }
+                                                            else if(distance<115) {
+                                                                min = 15.0;
+                                                                max = 16.5;
+                                                            }
+                                                            else if(distance<125) {
+                                                                min = 16.5;
+                                                                max = 17.5;
+                                                            }
+                                                            else if(distance<135) {
+                                                                min = 18.0;
+                                                                max = 19.0;
+                                                            }
+                                                            else if(distance<140) {
+                                                                min = 18.5;
+                                                                max = 19.5;
+                                                            }
+                                                            else {
+                                                                min = 19.0;
+                                                                max = 20.0;
+                                                            }
+
+                                                            let judges = [];
+                                                            let points = 60 + 1.8*(distance-125);
+
+
+                                                            for(let i=1; i<=5; i++) {
+                                                                judges[i-1] = (min+(Math.round(Math.random() * (max-min) * 2) / 2));
+                                                                player.rows[3].cells[i].innerHTML = judges[i-1].toFixed(1);
+                                                                points+=judges[i-1];
+                                                            }
+
+                                                            let maxJudge = Math.max(...judges);
+                                                            let minJudge = Math.min(...judges);
+
+                                                            for(let i=1; i<=5; i++) {
+                                                                if(judges[i-1] == minJudge) {
+                                                                    player.rows[3].cells[i].style.textDecoration = "line-through";
+                                                                    break;
+                                                                }
+                                                            }
+
+                                                            for(let i=1; i<=5; i++) {
+                                                                if(judges[i-1] == maxJudge) {
+                                                                    player.rows[3].cells[i].style.textDecoration = "line-through";
+                                                                    break;
+                                                                }
+                                                            }
+
+                                                            points-=minJudge+maxJudge;
+                                                            skijumpers2[position].points = (Number(skijumpers2[position].points) + points).toFixed(1);
+                                                            player.rows[4].cells[1].innerHTML =  points.toFixed(1);
+                                                            
+                                                            for(let i=0; i<skijumpers.length; i++) {
+                                                                if(Number(skijumpers2[position].points)>=Number(skijumpers[i].points)) {
+
+
+                                                                    for(let j=0; j<skijumpers.length; j++) {
+                                                                        if(skijumpers2[position].id == skijumpers[j].id) {
+                                                                            skijumpers.splice(j, 1);
+                                                                        }
+                                                                    }
+                                                                    skijumpers.splice(i, 0, skijumpers2[position]);
+                                                                    
+                                                                    
+                                                                    
+                                                                    
+                                                                    
+                                                                    break;
+                                                                }
+                                                            }
+
+                                                            for(let i=0; i<skijumpers.length; i++) {
+                                                                table.rows[i+1].cells[1].innerHTML = skijumpers[i].firstName;
+                                                                table.rows[i+1].cells[2].innerHTML = skijumpers[i].lastName;
+                                                                table.rows[i+1].cells[3].innerHTML = "<img src='IMG/flags/" + skijumpers[i].country + ".png' onerror=\"this.onerror=null;this.src='IMG/flags/olympic.png';\">";
+                                                                table.rows[i+1].cells[4].innerHTML = skijumpers[i].points;
+                                                            }
+                                                            
+                                                            console.log(skijumpers);
+
+                                                            
+
+                                                            counter = 0;
+                                                            enter = true;
+                                                            
+
+                                                            if(position==0) {
+                                                                seria++;
+                                                            }
+                                                            else {
+                                                                position--;
+                                                            }
+                                                        }
+
+                                                        x+=0.1;
+                                                        y+=0.22; 
+                                                        jumper.style.left = x + "vw";
+                                                        jumper.style.top = y + "vh";
+                                                    }
+                                                }
+
+                                                }
+                                                
+            
+                                                x+=0.1535;
+                                                jumper.style.left = x + "vw";
+                                                jumper.style.top = y + "vh";
+                                                jumper.style.rotate = angle + "deg"; 
+                                            } 
+                                        }
+                            else {
+                                x+=0.1;
+                                y+=0.285; 
+                                jumper.style.left = x + "vw";
+                                jumper.style.top = y + "vh";
+                                 
+    }
+  }
+
+
+                }
+            })        
+                }
+            })
+    
+            
+
+        })
+
+        
+                 
+    </script>
+</body>
+</html>

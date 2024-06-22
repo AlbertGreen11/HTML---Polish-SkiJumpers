@@ -1,0 +1,264 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+#header {
+    font-size: 4vw;
+    background-image: linear-gradient(180deg, white 60%, red 50%);
+    font-weight: bold;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+header{
+    height: 12vh;
+    background: url('IMG/snow.gif'), rgb(4, 1, 41);
+    background-size: 10%;
+    position: sticky;
+    top: 0;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo {
+    height: 3.5vh;
+}
+
+#first{
+    position: relative;
+    box-shadow: 0.25vw 0 0 rgb(4, 1, 41);
+    height: 75vh;
+    float: left;
+    width: 30%;
+    background-color: black;
+}
+
+#second{
+    box-shadow: inset -0.25vw 0 0 rgb(4, 1, 41);
+    height: 75vh;
+    float: left;
+    width: 60%;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    background-image: url(IMG/hill.jpg);
+    background-size: cover;
+}
+
+#opis{
+    position: relative;
+    font-size: 5vw;
+    color: rgb(16, 144, 218);
+    text-shadow: 0.05vw 0 rgb(0, 0, 0), 0 0.05vw rgb(0, 0, 0), 0.05vw 0 rgb(0, 0, 0), 0 0.05vw rgb(0, 0, 0);
+    text-align: center;
+}
+
+#third{
+    text-align: center;
+    position: relative;
+    height: 75vh;
+    float: left;
+    width: 10%;
+}
+
+#info {
+    background-color: rgb(4, 1, 41);
+    height: 2.5vh;
+    width: 100%;
+    float: left;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    z-index: 5;
+}
+
+#info-napis {
+    font-size: 1vw;
+    color: white;
+    font-weight: bold;
+}
+
+.site {
+    position: absolute;
+    top: 2.5vh;
+    height: 72.5vh;
+    object-fit: cover;
+}
+
+#wikipedia {
+    position: absolute;
+    width: 30%;
+    left: 0;
+    z-index: 1;
+    transition: width 0.5s ease, z-index 0.5s ease-out;
+}
+
+#wikipedia:hover {
+    width: 100%;
+    z-index: 5;
+}
+
+#skijumping {
+    position: absolute;
+    width: 30%;
+    left: 25%;
+    z-index: 1;
+    transition: width 0.5s ease, z-index 0.5s ease-out, left 0.5s;
+}
+
+#skijumping:hover {
+    width: 100%;
+    left: 0;
+    z-index: 5;
+}
+
+#fis {
+    position: absolute;
+    width: 30%;
+    left: 50%;
+    z-index: 1;
+    transition: width 0.5s ease, z-index 0.5s ease-out, left 0.5s;
+}
+
+#fis:hover {
+    width: 100%;
+    left: 0;
+    z-index: 5;
+}
+
+#skokinarciarskie {
+    position: absolute;
+    width: 25%;
+    left: 75%;
+    z-index: 1;
+    transition: width 0.5s ease, z-index 0.1s ease-out, left 0.5s;
+}
+
+#skokinarciarskie:hover {
+    width: 100%;
+    left: 0;
+    z-index: 5;
+}
+
+footer{
+    height: 13vh;
+    font-size: 2vh;
+    background-color: rgb(4, 1, 41);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    clear: both;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.skoczkowie {
+    height: 10.72vh;
+    width: 100%;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.skoczkowie_photo{
+    height: 100%;
+    width: 100%;
+    background-position-x: center;
+    background-size: 110%;
+    box-shadow: inset 0.25vw 0.25vw 0 rgb(4, 1, 41);
+    transition: background-position-x 0.5s;
+}
+
+a > .skoczkowie {
+    text-decoration: none;
+    color: rgb(16, 144, 218);
+    font-size: 2vw;
+}
+
+.link {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.skoczkowie_photo:hover{
+    opacity: 0.3;
+    background-position-x: 1%;
+}
+
+.skoczkowie:hover > .link {
+    opacity: 1;
+}
+
+#malysz {
+    box-shadow: inset 0.25vw 0 0 rgb(4, 1, 41);
+    background-image: url(IMG/malysz.png);
+    background-position-y: 60%;
+}
+
+#stoch {
+    background-image: url(IMG/stoch.png);
+    background-position-y: 15%;
+}
+
+#kubacki {
+    background-image: url(IMG/kubacki.png);
+    background-position-y: 45%;
+}
+
+#zyla {
+    background-image: url(IMG/zyla.png);
+    background-position-y: 30%;
+}
+
+#kot {
+    background-image: url(IMG/kot.png);
+    background-position-y: 20%;
+}
+
+#fortuna {
+    background-image: url(IMG/fortuna.png);
+    background-position-y: 40%;
+}
+
+#minigame {
+    background-image: url(IMG/minigame.png);
+    background-position-y: 40%;
+}
+
+video {
+    width: 100%;
+    animation: videoAnimation 0.5s forwards;
+}
+
+@keyframes videoAnimation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+button {
+    position: absolute;
+    top: 80%;
+    height: 5%;
+    border-radius: 1vw;
+    background-color: rgb(4, 1, 41);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.7vw;
+}
+

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Polscy skoczkowie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="IMG/skoczek-logo.png">
+</head>
+<body>
+    <a href="index.html">
+    <header>
+        <div><img class="logo" src="IMG/skoczek-logo.png" alt="skoczek-logo"></div>
+        <div id="header">Polscy Skoczkowie</div>
+        <div><img class="logo" src="IMG/skoczek-logo.png" alt="skoczek-logo"></div>
+    </header>
+    </a>
+
+    <div id="first">
+        <a href="malysz.html"><div class="skoczkowie"><span class="link">Adam Małysz</span><div id="malysz" class="skoczkowie_photo"></div></div></a>
+        <a href="stoch.html"><div class="skoczkowie"><span class="link">Kamil Stoch</span><div id="stoch" class="skoczkowie_photo"></div></div></a>
+        <a href="kubacki.html"><div class="skoczkowie"><span class="link">Dawid Kubacki</span><div id="kubacki" class="skoczkowie_photo"></div></div></a>
+        <a href="zyla.html"><div class="skoczkowie"><span class="link">Piotr Żyła</span><div id="zyla" class="skoczkowie_photo"></div></div></a>
+        <a href="kot.html"><div class="skoczkowie"><span class="link">Maciej Kot</span><div id="kot" class="skoczkowie_photo"></div></div></a>
+        <a href="fortuna.html"><div class="skoczkowie"><span class="link">Wojciech Fortuna</span><div id="fortuna" class="skoczkowie_photo"></div></div></a>
+        <a href="minigame.html"><div class="skoczkowie"><span class="link">MiniGame</span><div id="minigame" class="skoczkowie_photo"></div></div></a>
+    </div>
+
+    <div id="second">
+        <div id="opis">
+        Strona opisuje polskich skoczków wszechczasów!
+        </div>
+        
+        <button id="button">Kliknij, aby móc obejrzeć filmy!</button>
+    </div>
+
+    <div id="third">
+        <div id="info"><div id="info-napis">Więcej o skokach...</div></div>
+        <a href="https://pl.wikipedia.org/wiki/Skoki_narciarskie"><img class="site" id="wikipedia" src="IMG/wikipedia.jpg" alt="wikipedia.pl"></a>
+        <a href="https://www.skijumping.pl/"><img class="site" id="skijumping" src="IMG/skijumping.jpg" alt="skijumping.pl"></a>
+        <a href="https://www.fis-ski.com/en/ski-jumping"><img class="site" id="fis" src="IMG/fis.jpg" alt="fis-ski.com"></a>
+        <a href="https://www.skokinarciarskie.pl/"><img class="site" id="skokinarciarskie" src="IMG/skokinarciarskie.jpg" alt="skokinarciarskie.pl"></a>
+    </div>
+
+    <footer>
+        <div>
+        Created by: <br>
+        Albert Pacocha <br>
+        albertpacocha@o2.pl <br>
+        664 705 252
+        </div>
+    </footer>
+
+    <script>
+        let div = document.getElementById("second");
+        let malysz = document.getElementById("malysz");
+        let stoch = document.getElementById("stoch");
+        let kubacki = document.getElementById("kubacki");
+        let zyla = document.getElementById("zyla");
+        let kot = document.getElementById("kot");
+        let fortuna = document.getElementById("fortuna");
+        let minigame = document.getElementById("minigame");
+        let button = document.getElementById("button");
+
+        button.addEventListener("click", function() {
+            div.innerHTML = "<div id='opis'>Strona opisuje polskich skoczków wszechczasów!</div>";
+
+            malysz.addEventListener("mouseover", function() {
+            document.querySelectorAll('body > *:not(#second)').forEach((el) => el.style.opacity = 0.5);
+            div.innerHTML = "<video controls> <source src='MP4/Małysz.mp4' type='video/mp4'></video>";
+            div.querySelector("video").play();
+        });
+
+        malysz.addEventListener("mouseout", function() {
+            document.querySelectorAll('body > *:not(#second)').forEach((el) => el.style.opacity = 1);
+            div.innerHTML = "<div id='opis'>Strona opisuje polskich skoczków wszechczasów!</div>";
+        });
+
+        stoch.addEventListener("mouseover", function() {
+            document.querySelectorAll('body > *:not(#second)').forEach((el) => el.style.opacity = 0.5);
+            div.innerHTML = "<video controls> <source src='MP4/Stoch.mp4' type='video/mp4'></video>";
+            div.querySelector("video").play();
+        });
+
+        stoch.addEventListener("mouseout", function() {
+            document.querySelectorAll('body > *:not(#second)').forEach((el) => el.style.opacity = 1);
+            div.innerHTML = "<div id='opis'>Strona opisuje polskich skoczków wszechczasów!</div>";
+        });
+
+        kubacki.addEventListener("mouseover", function() {
+            document.querySelectorAll('body > *:not(#second)').forEach((el) => el.style.opacity = 0.5);
+            div.innerHTML = "<video controls> <source src='MP4/Kubacki.mp4' type='video/mp4'></video>";
+            div.querySelector("video").play();
+        });
+
+        kubacki.addEventListener("mouseout", function() {
+            document.querySelectorAll('body > *:not(#second)').forEach((el) => el.style.opacity = 1);
+            div.innerHTML = "<div id='opis'>Strona opisuje polskich skoczków wszechczasów!</div>";
+        });
+
+        zyla.addEventListener("mouseover", function() {
+            document.querySelectorAll('body > *:not(#second)').forEach((el) => el.style.opacity = 0.5);
+            div.innerHTML = "<video controls> <source src='MP4/Żyła.mp4' type='video/mp4'></video>";
+            div.querySelector("video").play();
+        });
+
+        zyla.addEventListener("mouseout", function() {
+            document.querySelectorAll('body > *:not(#second)').forEach((el) => el.style.opacity = 1);
+            div.innerHTML = "<div id='opis'>Strona opisuje polskich skoczków wszechczasów!</div>";
+        });
+
+        kot.addEventListener("mouseover", function() {
+            document.querySelectorAll('body > *:not(#second)').forEach((el) => el.style.opacity = 0.5);
+            div.innerHTML = "<video controls> <source src='MP4/Kot.mp4' type='video/mp4'></video>";
+            div.querySelector("video").play();
+        });
+
+        kot.addEventListener("mouseout", function() {
+            document.querySelectorAll('body > *:not(#second)').forEach((el) => el.style.opacity = 1);
+            div.innerHTML = "<div id='opis'>Strona opisuje polskich skoczków wszechczasów!</div>";
+        });
+
+        fortuna.addEventListener("mouseover", function() {
+            document.querySelectorAll('body > *:not(#second)').forEach((el) => el.style.opacity = 0.5);
+            div.innerHTML = "<video controls> <source src='MP4/Fortuna.mp4' type='video/mp4'></video>";
+            div.querySelector("video").play();
+        });
+
+        fortuna.addEventListener("mouseout", function() {
+            document.querySelectorAll('body > *:not(#second)').forEach((el) => el.style.opacity = 1);
+            div.innerHTML = "<div id='opis'>Strona opisuje polskich skoczków wszechczasów!</div>";
+        });
+
+        minigame.addEventListener("mouseover", function() {
+            document.querySelectorAll('body > *:not(#second)').forEach((el) => el.style.opacity = 0.5);
+            div.innerHTML = "<video controls> <source src='MP4/Minigame.mp4' type='video/mp4'></video>";
+            div.querySelector("video").play();
+        });
+
+        minigame.addEventListener("mouseout", function() {
+            document.querySelectorAll('body > *:not(#second)').forEach((el) => el.style.opacity = 1);
+            div.innerHTML = "<div id='opis'>Strona opisuje polskich skoczków wszechczasów!</div>";
+        });
+        })
+
+
+
+    </script>
+
+</body>
+</html>
